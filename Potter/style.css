@@ -1,0 +1,13 @@
+.wrapper {
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.wrapper div {
+    width: calc(100% / 2 - 30px);
+    margin-bottom: 50px;
+    line-height: 1.6;}
