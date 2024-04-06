@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2 align="center">Серия ромаов о Гарри Потере</h2>
+    <p align="center"><img src="D:/IT Academy/Project1-1/potter-all.jpg" width="100"></p>
+    <strong>Самая знаменитая сага новейшего времени разошлась рекордным тиражом - более 400 миллионов экземпляров на 68 языках (включая эсперанто, древнегреческий и латынь). Книги Роулинг сумели оторвать детей и взрослых от экранов компьютеров и стали мощнейшим импульсом для интереса к чтению в современную эпоху. </strong>
+    <hr>
+</body>
+</html>
+
+
