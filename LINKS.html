@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+    <style>
+        .link{
+            :hover{
+                color: red;
+            }
+        }
+        .link1{
+            background: repeat-y; 
+            margin: 20px;
+ 
+        }
+ 
+        /* не работает */
+        a.link1[href^='https://']{
+            border-right: solid red 3px;padding: 10px;
+        }
+
+        .link2{
+           display: inline-block;
+            margin: 20px;
+            padding: 5px;
+        }
+
+        .link3{
+            border-collapse: collapse; 
+            color: transparent;
+        }
+        
+    </style>
+ 
+     <body>
+        <div class ="link">
+        <div class="link1">
+            
+            <a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >  первая ссылка</a>
+            <a href ="" style="border-right: solid red 3px;padding: 10px;">вторя ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">третья ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">четвертая ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">пятая ссылка</a>
+    
+        </div>
+
+        <div class="link2">
+            <a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >  первая ссылка</a>
+            <a href ="" style="border-right: solid red 3px;padding: 10px;">вторя ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">третья ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">четвертая ссылка</a>
+            <a href="" style="border-right: solid red 3px;padding: 10px;">пятая ссылка</a>
+        </div>
+
+        <div class="link3">
+            <table >
+                <tr>
+                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >первая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >вторая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >третья ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >четвертая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >пятая ссылка</a></td>
+                </tr>
+           </table>
+        </div>
+    </div>
+ 
+    
+</body>
+</html>
