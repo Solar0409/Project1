@@ -5,69 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-
-
     <style>
-        .link{
-            :hover{
-                color: red;
-            }
-        }
-        .link1{
-            background: repeat-y; 
-            margin: 20px;
- 
-        }
- 
-        /* не работает */
-        a.link1[href^='https://']{
-            border-right: solid red 3px;padding: 10px;
-        }
+        .link1, .link2, .link3{
+            :hover{color: red;}
+             margin: 20px;
+             padding: 5px;
+             
+          }
 
-        .link2{
+          a{
+            color: green;
+            border-right: solid red 3px;
+          }
+       
+        .link1 a {
            display: inline-block;
-            margin: 20px;
-            padding: 5px;
+          
+  
         }
 
-        .link3{
+        .link2 tr td {
             border-collapse: collapse; 
             color: transparent;
+
         }
+        .link3{
+            display: flex;
+            padding-right: 2px;
+        }
+        
+        
+        
         
     </style>
  
      <body>
-        <div class ="link">
-        <div class="link1">
-            
-            <a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >  первая ссылка</a>
-            <a href ="" style="border-right: solid red 3px;padding: 10px;">вторя ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">третья ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">четвертая ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">пятая ссылка</a>
+        <div class ="link1">
+ 
+            <a href ="https://www.cambridgeenglish.org/" >  первая ссылка</a>
+            <a href ="https://github.com/Solar0409/Project1">вторя ссылка</a>
+            <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/" >третья ссылка</a>
+            <a href="https://code.makery.ch/ru/library/javafx-tutorial/part1/" >четвертая ссылка</a>
+            <a href="https://validator.w3.org/nu/#textarea" >пятая ссылка</a>
     
         </div>
 
+        
+
         <div class="link2">
-            <a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >  первая ссылка</a>
-            <a href ="" style="border-right: solid red 3px;padding: 10px;">вторя ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">третья ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">четвертая ссылка</a>
-            <a href="" style="border-right: solid red 3px;padding: 10px;">пятая ссылка</a>
+            <table >
+                <tr>
+                <td><a href ="https://www.cambridgeenglish.org/"  >первая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/"  >вторая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/"  >третья ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/"  >четвертая ссылка</a></td>
+                <td><a href ="https://www.cambridgeenglish.org/"  >пятая ссылка</a></td>
+                </tr>
+           </table>
         </div>
 
         <div class="link3">
-            <table >
-                <tr>
-                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >первая ссылка</a></td>
-                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >вторая ссылка</a></td>
-                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >третья ссылка</a></td>
-                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >четвертая ссылка</a></td>
-                <td><a href ="https://www.cambridgeenglish.org/" style="border-right: solid red 3px;padding: 10px;" >пятая ссылка</a></td>
-                </tr>
-           </table>
+            <a href ="https://www.cambridgeenglish.org/" >  первая ссылка</a>
+            <a href ="https://tproger.ru/translations/how-css-flexbox-works" >вторя ссылка</a>
+            <a href="https://open-source-peace.github.io/w3schoolsrus/css" >третья ссылка</a>
+            <a href="https://docs.google.com/spreadsheets/d/1j1isZ43n-WaNuK6vr8YtYCu4-aQ1nOuabBzQmDp9OUE/edit#gid=1060096424" >четвертая ссылка</a>
+            <a href="https://fonts.google.com/selection/embed" >пятая ссылка</a>
         </div>
     </div>
  
