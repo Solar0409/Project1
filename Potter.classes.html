@@ -75,7 +75,7 @@
 
         }
 
-        .ref table tr {
+        .ref table tr{
             margin: 3px;
             padding: 3px;
             font-size: x-small;
@@ -202,13 +202,22 @@
 
      
          @media screen and (max-width:988px){
-           .ref table tr{
+           .ref table tr td{
                 width: 25%;
                 text-align:center ;
-                display: inline-block;
-                overflow: hidden;
-                
+                display: block;
+                margin-left: 25px;
+                text-wrap: nowrap;
+           }
+        }
+        @media  screen and (max-width: 600px) {
+            td{
+                text-align: justify;
+                margin: 3px;
+                padding: 3px;
+                min-width: max-content;
             }
+            
         }
         
 
