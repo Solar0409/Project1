@@ -7,69 +7,124 @@
 </head>
 <body>
     <style>
-        .form1{
-            width:100%;
+      body{
+        width: 50%;
+        margin: 10px;
+      
+      }
+    
+      
+        label{
+          margin: 6px 0px;;
         }
-        
-    </style>
-<form action="https://fe.it-academy.by/TestForm.php" method="get" style="width: 25%;">
-  <fieldset>
-    <div class="form1">Для публикации вашей статьи заполните,<br>
-        пожалуйста, следующую форму:<br>
-        <br>
-        <label>Название статьи: <br>
-            <input type="text" name="nam" value="" style="width: -webkit-fill-available;">
-        </label>
-        <p>Рубрика:
-        <select name="" size="1" style="width: -webkit-fill-available;"></p>
-            <option value="1">программирование</option>
-            <br>
-            <br>
-        </select>
-           Публикация:<br>
-          
 
-            <input type="radio" name="answer" value="1">на сайте <br>
-            <input type="radio" name="answer" value="2">в журнале <br>
-            <input type="radio" name="answer" value="3">на сайте и в журнале<br>
-            
-            
-            Разрешить комментарии: 
-            <input type="checkbox" name="permit" checked><br>
-            Текст статьи: <br>
-            <textarea name="mytext" style="width: -webkit-fill-available;"></textarea><br>
+ 
+    @media screen and (max-width: 900px){
+           fieldset {
+                width: 100%;
+             
+               
 
+        }
+    }
+    @media screen and (max-width: 700px){
+           fieldset {
+                width: 100%;
+ 
+        }
+    }
+
+    @media screen and (max-width:700px){
+      select{
+        width:100%
+      }
+    }
+    @media screen and (max-width:700px){
+      label{
+        width:25%;
      
-        <br>
-
-      
-    </div>
-</fieldset>
-</form>
-<br>
-
-<form action="https://fe.it-academy.by/TestForm.php" method="get" style="width: 35%;">
-<fieldset>
-    <div class="form2">Для публикации вашей статьи заполните,
-        пожалуйста, следующую форму:<br>
-        <br>
-        <label>Название статьи: <input type="text" name="nam" value="" style="width:65%; "> </label><br>
+    
+      }
+    }
+    @media screen and (max-width:700px){
+      input{
         
-        <label>Рубрика:</label>
-        <select name="" size="1"><br>
-             <option value="1">программирование</option> 
-        </select><br>
-      
-                   
-      
-           Публикация:        
+        display:block;
+       
+      }
+    }
+    @media screen and (max-width:700px){
+      span{
+        display: block;
+      }
+    }
 
-            <input type="radio" name="answer" value="1">на сайте 
-            <input type="radio" name="answer" value="2">в журнале 
-            <input type="radio" name="answer" value="3">на сайте и в журнале<br>
+    @media screen and (max-width:700px){
+      .article input{
+        width:100%;
+       
+      }
+    }
+   
+  
+        button {
+        padding: 2px 4px;
+      
+      }
+      input[type="text"]{
+        width: 75%;
+        float: right;
+      }
+
+      input[type="text"]:focus {
+        border: none;
+        outline: 2px solid rgb(77, 44, 77);
+        
+       
+      }
+    
+      input[type="radio"]:checked + span{
+        font-weight: bold;
+        text-decoration: underline;
+               
+      }
+      @media screen and (max-width:700px){
+        
+      
+      input [type="checkbox"]:checked{
+        width: 100%;
+        display: block;
+      }
+    }
+      
+
+    </style>
+<form action="https://fe.it-academy.by/TestForm.php" method="get">
+<fieldset>
+       Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br>
+        <br>
+        <label for ="name">Название статьи:</label>
+        <input type="text" name="nam"> 
+      <br>
+      <br>
+    
+        <label for="rubric">Рубрика:</label>
+
+        <select name="Section"><br>
+        <option value="1">программирование</option> 
+        </select><br>
+
+        
+      
+        <label for="article" >Публикация: </label>       
+
+            <input type="radio" name="answer" value="1" checked> <span>на сайте </span>
+            <input type="radio" name="answer" value="2"> <span>в журнале </span>
+            <input type="radio" name="answer" value="3"><span>на сайте и в журнале</span><br>
             
             
-            Разрешить комментарии:  <input type="checkbox" name="permit" checked><br>
+            Разрешить комментарии:<input type="checkbox" name="permit" checked><br>      
+            
             Текст статьи: <br>
             <textarea name="mytext" style="width: -webkit-fill-available;"></textarea><br>
             <button type="submit">
@@ -78,13 +133,8 @@
 
      
         <br>
-
-    </div>
-</fieldset>
+  </fieldset>
 </form>
-    
-
-
     
 </body>
 </html>
