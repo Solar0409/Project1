@@ -7,66 +7,16 @@
 </head>
 <body>
     <style>
-      body{
+       body{
         width: 50%;
         margin: 10px;
       
       }
-    
-      
-        label{
-          margin: 6px 0px;;
-        }
-
- 
-    @media screen and (max-width: 900px){
-           fieldset {
-                width: 100%;
-             
-               
-
-        }
-    }
-    @media screen and (max-width: 700px){
-           fieldset {
-                width: 100%;
- 
-        }
-    }
-
-    @media screen and (max-width:700px){
-      select{
-        width:100%
-      }
-    }
-    @media screen and (max-width:700px){
-      label{
-        width:25%;
-     
-    
-      }
-    }
-    @media screen and (max-width:700px){
-      input{
-        
-        display:block;
-       
-      }
-    }
-    @media screen and (max-width:700px){
-      span{
-        display: block;
-      }
-    }
-
-    @media screen and (max-width:700px){
-      .article input{
-        width:100%;
-       
-      }
-    }
-   
   
+       label{
+        float: left;
+       }
+
         button {
         padding: 2px 4px;
       
@@ -88,16 +38,46 @@
         text-decoration: underline;
                
       }
-      @media screen and (max-width:700px){
-        
-      
-      input [type="checkbox"]:checked{
+      .radiobutton{
+        display:block;
+      }
+
+      .check{
+        display: inline-table; 
+        display: inline-flex;
+
+      }
+
+     
+
+    @media screen and (max-width: 700px){
+           fieldset, select, label {
+                width: 100%;
+ 
+        }
+    }
+
+    
+    @media screen and (max-width:700px){
+      input{
+        display:inline-table;
+        float: inline-start;
+       
+      }
+    }
+    @media screen and (max-width:700px){
+      span{
+        display: block;
+      }
+    }
+       
+    @media screen and (max-width:700px){
+       input [type="checkbox"]:checked{
         width: 100%;
         display: block;
       }
     }
-      
-
+   
     </style>
 <form action="https://fe.it-academy.by/TestForm.php" method="get">
 <fieldset>
@@ -107,24 +87,28 @@
         <input type="text" name="nam"> 
       <br>
       <br>
-    
+         
+         
         <label for="rubric">Рубрика:</label>
-
-        <select name="Section"><br>
-        <option value="1">программирование</option> 
-        </select><br>
-
-        
+       
+        <select name="Section" ><br>
+        <option value="1" >программирование</option> 
+        </select><br><br>
+      
       
         <label for="article" >Публикация: </label>       
-
+            <div class="radiobutton">
             <input type="radio" name="answer" value="1" checked> <span>на сайте </span>
             <input type="radio" name="answer" value="2"> <span>в журнале </span>
             <input type="radio" name="answer" value="3"><span>на сайте и в журнале</span><br>
-            
-            
+            </div>
+            <br>
+
+            <div class="check">
             Разрешить комментарии:<input type="checkbox" name="permit" checked><br>      
-            
+          </div>
+          
+           <br>
             Текст статьи: <br>
             <textarea name="mytext" style="width: -webkit-fill-available;"></textarea><br>
             <button type="submit">
