@@ -9,14 +9,11 @@
     <style>
        body{
         width: 50%;
-        margin: 10px;
+        margin: 5px;
       
       }
   
-       label{
-        float: left;
-       }
-
+       
         button {
         padding: 2px 4px;
       
@@ -39,7 +36,7 @@
                
       }
       .radiobutton{
-        display:block;
+        display:inline-block;
       }
 
       .check{
@@ -47,68 +44,100 @@
         display: inline-flex;
 
       }
+      .article{
+        display:block; 
+        margin-right: 2em; 
+
+      }
+      .Section label{
+        margin-right: 9.5em;
+
+      }
+      .publication{
+        display: inline-block;
+         margin-right: 7.5em;
+
+      }
 
      
 
     @media screen and (max-width: 700px){
-           fieldset, select, label {
-                width: 100%;
- 
-        }
-    }
-
-    
-    @media screen and (max-width:700px){
-      input{
-        display:inline-table;
-        float: inline-start;
-       
+      fieldset{
+      width: 120%;
+      margin-left: 5px;
       }
-    }
-    @media screen and (max-width:700px){
+
+      select{
+      width: 65%;
+      display: block;
+      }
+
+      input{
+      display:inline-table;
+      float: inline-start;
+ 
+      }
+
+      .radiobutton{
+        display: block;
+      }
+ 
       span{
         display: block;
       }
-    }
-       
-    @media screen and (max-width:700px){
+  
+ 
        input [type="checkbox"]:checked{
         width: 100%;
         display: block;
       }
+           
+  
+      input[type="text"]{
+        width: 100%;
+        margin-left: 5px;
+       
+      }
+      .article{
+        margin-left: 5px;
+
+      }
     }
-   
+
     </style>
 <form action="https://fe.it-academy.by/TestForm.php" method="get">
 <fieldset>
        Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br>
         <br>
-        <label for ="name">Название статьи:</label>
-        <input type="text" name="nam"> 
-      <br>
-      <br>
-         
-         
-        <label for="rubric">Рубрика:</label>
-       
-        <select name="Section" ><br>
-        <option value="1" >программирование</option> 
-        </select><br><br>
-      
-      
-        <label for="article" >Публикация: </label>       
+        <div  class="article">
+        <label>Название статьи:</label>
+        <input   type="text" name="nam"> 
+        </div><br>
+            
+        <div class="Section">
+        <label>Рубрика: </label>
+        <select   name="Section" >
+        <option   value="1" >программирование</option> 
+        </select><br>
+        </div>
+   
+        <div class="publication">
+        <label >Публикация: </label> 
+        </div> 
+
             <div class="radiobutton">
-            <input type="radio" name="answer" value="1" checked> <span>на сайте </span>
-            <input type="radio" name="answer" value="2"> <span>в журнале </span>
-            <input type="radio" name="answer" value="3"><span>на сайте и в журнале</span><br>
+            <input type="radio" name="answer" value="1" checked > <span>на сайте </span>
+            <input type="radio" name="answer" value="2" > <span>в журнале </span>
+            <input type="radio" name="answer" value="3" ><span>на сайте и в журнале</span><br>
             </div>
             <br>
+         
 
             <div class="check">
             Разрешить комментарии:<input type="checkbox" name="permit" checked><br>      
-          </div>
+            </div>
           
-           <br>
+            <br>
             Текст статьи: <br>
             <textarea name="mytext" style="width: -webkit-fill-available;"></textarea><br>
             <button type="submit">
@@ -116,7 +145,7 @@
             </button>
 
      
-        <br>
+        
   </fieldset>
 </form>
     
