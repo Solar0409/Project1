@@ -9,12 +9,11 @@
     <style>
        body{
         width: 50%;
-        margin: 5px;
-      
+             
       }
   
-       
-        button {
+   
+      button {
         padding: 2px 4px;
       
       }
@@ -44,46 +43,47 @@
         display: inline-flex;
 
       }
-      .article{
-        display:block; 
-        margin-right: 2em; 
+      .article-name{
+        float: left;
+        width: 10em;
+      }
+      .article-input{
+        margin-left: 10em;
+      }
+      .article-input input{
+        width: 100%;
+      }
+      .Section-input{
+        
+        width: 50%;
+    
 
       }
-      .Section label{
-        margin-right: 9.5em;
 
-      }
+  
       .publication{
-        display: inline-block;
-         margin-right: 7.5em;
-
+        float: left;
+        width: 10em;
+ 
       }
 
      
 
     @media screen and (max-width: 700px){
       fieldset{
-      width: 120%;
       margin-left: 5px;
       }
 
-      select{
-      width: 65%;
-      display: block;
-      }
-
+     
       input{
       display:inline-table;
       float: inline-start;
  
       }
 
-      .radiobutton{
-        display: block;
-      }
- 
+      
       span{
-        display: block;
+        display:block;
       }
   
  
@@ -95,13 +95,13 @@
   
       input[type="text"]{
         width: 100%;
-        margin-left: 5px;
+        margin-left: 3px;
        
       }
-      .article{
-        margin-left: 5px;
-
+      .article-input{
+       margin-left: 5px;
       }
+     
     }
 
     </style>
@@ -109,26 +109,39 @@
 <fieldset>
        Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br>
         <br>
-        <div  class="article">
-        <label>Название статьи:</label>
+         <div class="Article">
+           <!-- <div style="float: left;width: 10em;" -->
+          <div class="article-name">
+          <label>Название статьи:</label>
+          </div>
+
+        <div class="article-input">
         <input   type="text" name="nam"> 
-        </div><br>
+        </div>
+      </div>
+       <br>
             
-        <div class="Section">
-        <label>Рубрика: </label>
+      <div class="Section">
+        <!-- <div style="float: left;width: 10em;" -->
+        <div class="article-name">
+        <label>Рубрика: </label> </div>
+
+        <div class="Section-input">
         <select   name="Section" >
         <option   value="1" >программирование</option> 
         </select><br>
         </div>
+      </div> 
+     
    
         <div class="publication">
-        <label >Публикация: </label> 
-        </div> 
+        <label >Публикация: </label></div> 
+     
 
             <div class="radiobutton">
             <input type="radio" name="answer" value="1" checked > <span>на сайте </span>
             <input type="radio" name="answer" value="2" > <span>в журнале </span>
-            <input type="radio" name="answer" value="3" ><span>на сайте и в журнале</span><br>
+            <input type="radio" name="answer" value="3" ><span>на сайте и в журнале</span>
             </div>
             <br>
          
