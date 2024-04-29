@@ -10,63 +10,59 @@
 <style>
     
     .images {
-    float:left;
-    padding:20px;
-    height:350px;
-    width:200px;
-    overflow:hidden;
-    text-align:center;
+    position: relative;
+    height:450px;
+    width:300px;
+    margin:0 auto;
+  
 }
       
      .text1, .text2{
-        margin-left: 20px;
+     
+        text-align: center;
      }
+
      .Man-and-woman{
         position: absolute;
         left: 180px; 
         width: 200px;
         height: 200px; 
-        margin-left: 70px;
-        margin-top: 20px;
         transition-duration: 0.96s;
         -webkit-transition-duration: 0.96s;
         -moz-transition-duration: 0.96s;
      }
      .Man-and-woman:hover{
-        opacity: 0.7;
+        opacity: 0.9;
         z-index: 80;
         
      }
      .Yin_and_Yang{
         position: absolute; 
         left: 80px; 
-        top: 250px; 
+        top: 200px; 
          width: 200px; 
          height: 200px;
-         margin-left: 50px;
-         margin-top: 10px;
-        transition-duration: 0.96s;
+         transition-duration: 0.96s;
         -webkit-transition-duration: 0.96s;
         -moz-transition-duration: 0.96s;
 
      }
      .Yin_and_Yang:hover{
-        opacity: 0.7;
-        z-index: 200;
+        opacity: 0.9;
+        z-index: 80;
      }
      .No_smoking{
         position: absolute;
         left: 80px; 
-        top: 150px; 
+        top: 100px; 
         width: 200px; 
         height: 200px;
-        margin-left: 50px;
         transition-duration: 0.96s;
         -webkit-transition-duration: 0.96s;
         -moz-transition-duration: 0.96s;
      }
      .No_smoking:hover{
-        opacity: 0.7;
+        opacity: 0.9;
         z-index:10;
      }
      .biohazard{
@@ -74,8 +70,6 @@
         left: 10px; 
         width: 200px; 
         height: 200px;
-        margin-left: 20px; 
-        margin-top: 20px;
         transition-duration: 0.96s;
         -webkit-transition-duration: 0.96s;
         -moz-transition-duration: 0.96s;
@@ -83,28 +77,24 @@
      }
 
      .biohazard:hover{
-        opacity: 0.7;
-        z-index: -250; 
+        opacity: 0.9;
+        z-index: 80; 
       
      }
-     @media screen and (max-width:900px){
-        .images {
-    float:left;
-    padding:20px;
-    height:250px;
-    width:200px;
-    overflow:hidden;
-    text-align:center;
-}
 
-     }
+    @media screen and (max-width:900px){
+    .images {
+    
+    padding:20px;
+    height:350px;
+    width:500px;
+    text-align:center;
+      }
+    }
 
 
     
 </style>
-
-<div>
-    
 
     <div class="text1">
         <p>Я к вам пишу – чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем наказать.
@@ -115,41 +105,25 @@
         
     </div> 
 
-</div> 
+
 
 <div class="images" >  
-    
-    <figure>
-        <img class="Man-and-woman" src="Man-and-woman.png">
-        <figcaption></figcaption>
-    </figure>
+   
+ 
+<img class="Man-and-woman" src="Man-and-woman.png">
+<img class="Yin_and_Yang" src="Yin_and_Yang.png" >
+<img class="biohazard"   src="biohazard.png" >
+<img class="No_smoking"   src="No_smoking.png" >
+
 </div>
-
-    <div class="images">
-        <figure>
-        <img class="Yin_and_Yang" src="Yin_and_Yang.png" >
-    </figure>
-    </div>
-
-    <div class="inages">
-        <figure>
-        <img class="biohazard"   src="biohazard.png" >
-    </figure>
-    </div>
-    <div class="images">
-        <figure>
-        <img class="No_smoking"   src="No_smoking.png" >
-    </figure>
-    </div>
-    <div class="clearfix" style="clear: both;"></div>
+  
+  
   
 
-        <div class="text2">
-        <p>Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи.
-        </p>
-       </div>
+ <div class="text2">
+ <p>Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи.</p>
+ </div>
 
-</div>
 
 </body>
 </html>
