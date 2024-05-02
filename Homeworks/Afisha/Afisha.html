@@ -1,5 +1,7 @@
 
 
+
+
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/d23624fc6e.js" crossorigin="anonymous"></script>
@@ -18,7 +20,7 @@
       .header, .footer {
         text-align: left;
         padding: 20px 0 10px 0;
-        background-color: rgb(75, 23, 23);
+        background-color: rgb(27, 17, 17);
         height: 60px;
         width: 100vw;
         color: white;
@@ -76,16 +78,86 @@
         padding-left: 20px;
         background-position: center;
       }
+      .timing{
+        float:right;
+        width: 80%;
+        text-align: center;
+      }
+      .mask{
+        width: 450px;
+        float: left;
+     
+      }
+      .href{
+        width: 85%;
+        text-align: right;
+  
+     
+      }
+      ul{
+        list-style-type: none;
+      }
+      .contacts{
+        width: 350px;
+        font-size: smaller;
+        float: right;
+       
+      }
+      @media screen and (max-width:988px) {
+        .video{
+          display: none;
+        }
+        .timing{
+        width: 100%;
+        text-align: center;
+
+        }
+        img{
+          width: 150px;
+          height: 100px;
+          display: inline-block;
+        }
+
+        }
+
+        @media screen and (max-width:435px) {
+          .video{
+          display: none;
+        }
+
+          .content{
+          display: none;
+          }
+          .header, .footer{
+            position: relative;
+          }
+          .fa-solid{
+            background-position: center;
+          }
+          .mask{
+            display: none;
+          }
+  
+        }
+      
+
+        
+      
     </style>
     <div class="container">
         <div class="header">
+          <div class="mask">
           <a href="" style="text-decoration: none;list-style: none; color: aliceblue;" >Сайт Концертно-Информационных Программ </a>
             <i class="fa-solid fa-masks-theater"></i>
-            
+          </div>
+          <div class="href">
            <a href="" style="text-decoration: none;list-style: none; color: aliceblue;">Афиша </a>
+           <i class="fa-solid fa-diamond"></i>
            <a href="" style="text-decoration: none;list-style: none; color: aliceblue;">Заказ билетов </a>
+           <i class="fa-solid fa-diamond"></i>
            <a href="" style="text-decoration: none;list-style: none; color: aliceblue;">Контакты </a>
-        </div>
+          </div>
+          </div>
         <div class="body">
             
             <div class="video">
@@ -94,58 +166,65 @@
             </div>
 
           <div class="content">
-
-            <h3>Опера VS Оперетта</h3>
             
+            <div class="timing">
+            <h3>Опера VS Оперетта</h3>
             <i class="fa-solid fa-music"></i> опера
             <i class="fa-solid fa-clock"></i> 19:00
             <i class="fa-solid fa-calendar-days"></i> 3 мая
-            <img src="poster__image.png" alt="Opera" placeholder="OperaVSOperetta">
-            
- 
+          </div>
+          <img src="poster__image.png" alt="Opera" placeholder="OperaVSOperetta">
+
           </div>
 
           <div class="content">
+            <div class="timing">
 
             <h3>Концерт Мосфильм против Голливуда</h3>
             <i class="fa-solid fa-clock"></i> 17:00
             <i class="fa-solid fa-calendar-days"></i> 4 мая
+          </div>
             <img src="mosfilm.png" alt="mosfilm" placeholder="MosfilmVSHollywood">
          </div>
 
           <div class="content">
-
+          
+            <div class="timing">
             <h3>Концерт скрипки с Оркестром</h3>
             <i class="fa-solid fa-music"></i> Симфония
             <i class="fa-solid fa-clock"></i> 12:00
             <i class="fa-solid fa-calendar-days"></i> 9 мая
+          </div>
             <img src="violin.jpg" alt="violin" placeholder="violin">
          </div>
 
          <div class="content">
-
+          <div class="timing">
             <h3>Антонио Вивальди. Времена года</h3>
             <i class="fa-solid fa-music"></i> Симфония
             <i class="fa-solid fa-clock"></i> 19:00
             <i class="fa-solid fa-calendar-days"></i> 9 мая
+          </div>
             <img src="vivaldi.jpg" alt="" placeholder="">
          </div>
 
          <div class="content">
-
+          <div class="timing">
             <h3>Чайковский П.И. Опера «Пиковая дама»</h3>
             <i class="fa-solid fa-music"></i> Симфония
             <i class="fa-solid fa-clock"></i> 19:00
             <i class="fa-solid fa-calendar-days"></i> 11 мая
+          </div>
             <img src="Picovaya-dama.jpg" alt="" placeholder="">
          </div>
 
          <div class="content">
-
+          <div class="timing">
             <h3>Опера VS Оперетта</h3>
             <i class="fa-solid fa-music"></i> Симфония
             <i class="fa-solid fa-clock"></i> 17:00
             <i class="fa-solid fa-calendar-days"></i> 12 мая
+          </div>
             <img src="slider__main-image.png" alt="" placeholder="">
          </div>
 
@@ -154,8 +233,20 @@
         </div>
 
         <div class="footer">
-          <div class="go-top"><a href="#"></a></div>
-          <i class="fa-solid fa-masks-theater"></i>
+          <div class="go-top"><a href="#"></a> </div>
+          <i class="fa-solid fa-masks-theater" style="margin-left: 10px;"></i>
+       
+          <div class="contacts">
+
+          <ul>
+              <li> <i class="fa-solid fa-diamond"></i>
+              г.Санкт-Петербург, Невский пр.,д.1</li>
+              <li><i class="fa-solid fa-diamond"></i>
+              concert@mail.ru</li>
+              <li> <i class="fa-solid fa-diamond"></i>
+              (812)123-45-67</li>
+          </ul>
+        </div>
         </div>
     </div>
   
