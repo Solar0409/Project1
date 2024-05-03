@@ -76,7 +76,15 @@ main{
     .href{
       width: 85%;
       text-align: right;
+    }
 
+      .href a{
+      text-decoration:none;
+      list-style: none;
+      color: aliceblue;
+ 
+      }
+     
    
     }
     ul{
@@ -120,10 +128,21 @@ main{
       }
       .footer_svg{
         display: none;
+      
+      }
+      .footer, .header{
+        position: relative;
       }
       .fa-solid{
         size: 50px;
       }
+      .mask a{
+        display: none;
+      }
+      i{
+        width: 50px;
+      }
+      
    
   
         
