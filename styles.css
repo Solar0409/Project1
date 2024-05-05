@@ -1,0 +1,107 @@
+main{
+    body {
+      margin-top: 0;
+    }
+    
+    .header{
+        
+        top: 0; 
+        text-align: left;
+        padding: 5px 0px 10px 0px;
+        background-image: linear-gradient(90deg, gray, #1A5276 ,#2471A3 );
+        height: 110px;
+        width: 100vw;
+        color: white;
+        font-size: 1em;
+        font-family: 'Times New Roman', serif;
+        position: fixed;
+      }
+      
+      .H1{
+        width: 150px;
+        margin: 5px;
+        float: left;
+      }
+      .href{
+        width: 100%;
+        text-align: center;
+        float: right;
+      
+      }
+      .href a{
+        margin: 20px;
+        text-decoration: none;
+        list-style: none;
+        color: aliceblue;
+
+      }
+      
+      .filters{
+        margin-top: 150px;
+        color: #1A5276;
+        width: 200px;
+        height: 500px;
+        position: absolute;
+      }
+      li{
+        list-style: none;
+      }
+      .content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+      }
+
+        .Belarus, .Marriot, .DoubleTree, .Atlantis, .Burj, .Country-side{
+            border: solid 1px #1A5276;
+            border-radius: 10px;
+            width: 300px;
+            height: 350px;
+            margin-top: 150px;
+            margin-left: 180px;
+            align-content: center;
+            flex-direction: row;
+          
+            
+
+        } 
+        h4{
+            margin-left: 5px;
+        }
+        img{
+            width: 200px ;
+            height: 150px;
+            margin-left: 50px;
+            
+        }
+        .Belarus ul li:before{
+            content: '\203A';
+     
+        }
+        .Marriot ul li:before{
+            content: '\203A';
+     
+        }
+        .DoubleTree ul li:before{
+            content: '\203A';
+     
+        }
+        .Atlantis ul li:before{
+            content: '\203A';
+     
+        }
+        .Burj ul li:before{
+            content: '\203A';
+     
+        }
+        .Country-side ul li:before{
+            content: '\203A';
+     
+        }
+
+
+
+   
+      
+}
