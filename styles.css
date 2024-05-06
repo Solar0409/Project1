@@ -20,12 +20,12 @@ main{
       .H1{
         width: 150px;
         margin: 5px;
-        float: left;
+     
       }
       .href{
         width: 100%;
         text-align: center;
-        float: right;
+       
       
       }
       .href a{
@@ -37,6 +37,7 @@ main{
       }
       
       .filters{
+        display: flex;
         margin-top: 150px;
         color: #1A5276;
         width: 200px;
@@ -51,16 +52,19 @@ main{
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
+            margin-top: 150px;
+            margin-left: 250px;
+            align-content: stretch;
       }
 
-        .Belarus, .Marriot, .DoubleTree, .Atlantis, .Burj, .Country-side{
+        .Card{
             border: solid 1px #1A5276;
             border-radius: 10px;
             width: 300px;
             height: 350px;
-            margin-top: 150px;
-            margin-left: 180px;
-            align-content: center;
+            align-content: stretch;
+            margin: 10px;
+           
             flex-direction: row;
           
             
@@ -75,33 +79,10 @@ main{
             margin-left: 50px;
             
         }
-        .Belarus ul li:before{
+        .Card ul li:before{
             content: '\203A';
      
         }
-        .Marriot ul li:before{
-            content: '\203A';
-     
-        }
-        .DoubleTree ul li:before{
-            content: '\203A';
-     
-        }
-        .Atlantis ul li:before{
-            content: '\203A';
-     
-        }
-        .Burj ul li:before{
-            content: '\203A';
-     
-        }
-        .Country-side ul li:before{
-            content: '\203A';
-     
-        }
+       
 
-
-
-   
-      
 }
