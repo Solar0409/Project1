@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+body{
+    margin: 0;
+}
+img{
+    width: 50px;
+    height: 80px;
+  
+}
+.containerPlane{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    animation: planeAnimate 15s linear infinite;
+    transition: width 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 0.065);
+    position: relative;
+    
+}
+@keyframes planeAnimate{
+    0%{
+        left:20px;
+
+    }
+    100%{
+        left: 1900px;
+    }
+}
+    .header{
+        top: 0; 
+        z-index: 2;
+        text-align: center;
+        padding: 5px 0px 10px 0px;
+        background: rgb(126,186,239);
+        height: 130px;
+        width: 100vw;
+        color: rgb(30,48,80);
+        font-size: 1em;
+        font-family: 'Bitter', serif;
+        position: fixed;
+      }
+      
+      .H1{
+        width: 100%;
+        margin: 5px;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        position: relative;
+       
+      }
+      .href{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        background-color: rgb(242, 245, 245);
+        padding: 5px;
+        box-shadow:5px 5px  5px 10px rgb(242, 245, 245);
+        font-family: 'Philosopher', serif;
+        
+      
+      }
+      .href a{
+        display: inline-block;
+        margin: 20px;
+        text-decoration: none;
+        list-style: none;
+        color: rgb(30,48,80);
+        
+      }
+      ul::after{
+        content: '';
+        clear: both;
+        display: block;
+      }
+     .dropdown> ul>li{
+        float: left;
+        position: relative;
+        cursor:pointer;
+      }
+      li{
+        list-style: none;
+      }
+      a:hover, .dropdown:hover{
+        background:  rgb(244, 245, 245);
+      }
+      .dropdown{
+        display: inline-block;
+        position: relative;
+        cursor:pointer;
+      }
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        min-width: 250px;
+        min-height: 250px;
+        background:   rgb(244, 245, 245);
+        
+      }
+      .dropdown-content a:hover{
+        background: rgba(244, 245, 245, 0.74);
+        
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+       
+      }
+     
+      .gridContainer { 
+        position: relative;
+       margin-top: 180px;
+       display: grid;
+       border: solid transparent 1px;
+       gap: 10px;
+       width: 100%;
+        
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr; 
+
+       grid-template-areas:
+       "Spain Bali Bali"
+       "Spain Egypt Czech"
+       "Spain Turkey Italy";
+      }
+      .gridContainer img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: blur(1px);
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 1ms linear;
+        z-index: 2;
+        overflow:hidden;
+        transform:scale(1);
+        -webkit-transform:scale(1);
+
+
+
+        
+      }
+      .gridContainer img:hover{
+         transition-duration: 1s;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        filter: saturate(200%);
+        opacity: none;
+      }
+      
+
+    
+      .footer {
+        bottom: 0;
+        text-align: center;
+        padding: 5px 0px 10px 0px;
+        background: rgb(126,186,239);
+        height: 85px;
+        width: 100vw;
+        color: rgb(30,48,80);
+        font-size: 1em;
+        font-family: 'Bitter', serif;
+        position: fixed;
+      }
+       .select-menu{
+        width: 100px;
+      }
+
