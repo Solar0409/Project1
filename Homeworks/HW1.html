@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+</head>
+<body>
+<script>
+    // <!-- 1) Попросить пользователя ввести по очереди 3 числа. 
+    // Вернуть в  alert разность удвоенной суммы первого и 
+    // третьего чисел и утроенного второго числа. -->
+
+    // var n1 = prompt("введите перове число");
+    // var n2 = prompt("введите второе число");
+    // var n3 = prompt("введите третье число");
+    // var result = (n1+n3)*2-n2*3;
+    // alert(result)
+
+    // <!-- 2) Попросить пользователя ввести по очереди 2 числа. 
+	// Определить четность этих чисел, записать в переменную результат (true/false)
+    //  и вывести на экран (alert или console.log) строку в виде 
+    // "Оба числа являются четными - true"  или "Оба числа являются четными - false"  -->
+     
+    // var n1 = prompt("введите перове число");
+    // var n2 = prompt("введите второе число");
+    // var n1Even = n1%2===0;
+    // var n2Even = n2%2===0;
+    // const result= n1Even && n2Even;
+
+    //  if ((n1 % 2 && n2 % 2) == 0){
+    //     console.log("Оба числа являются четными - true")
+    // }else{
+    //     console.log("Оба числа являются четными - false" )
+
+    // } 
+    
+   
+   
+
+    // <!-- 3) Попросить пользователя ввести по очереди 2 числа. 
+	// Определить положительны ли эти два числа (>0), записать в переменную результат
+    //  (true/false) и вывести на экран (alert или console.log)  строку в виде 
+    // "Оба числа являются положительными - true"  или "Оба числа являются положительными 
+    // - false"  -->
+    
+
+    // var n1 = prompt("введите перове число");
+    // var n2 = prompt("введите второе число");
+    
+    // var result = n1>0
+    // var result = n2>0
+    // if ((n1 > 0 && n2>0)){
+    //     console.log("Оба числа являются положительными - true")
+    // }else{
+
+    // } console.log("Оба числа являются положительными - false")
+   
+
+//    <!-- 4) Попросить пользователя ввести его зарплату и подсчитать расходы и остаток
+//     за месяц, учитывая, что он тратит:
+// 10% на подоходный налог
+// 270р на кварт плату
+// 5 раз делал покупки в магазине по 80р
+
+// Вывод в alert или console.log
+// Пример вывода:
+// Пользователь ввел 1000р
+// Остаток: 230р
+// Расход: 770р -->
+
+ 
+// const salary = prompt("Введите вашу зарплату:");
+// const tax = salary * 0.1;
+// const rentPayment = 270;
+// const shoppingCost = 5 * 80;
+
+// const totalExpenses = tax + rentPayment + shoppingCost;
+// const remainingBalance = salary - totalExpenses;
+
+// console.log(`Пользователь ввел ${salary}`);
+// console.log(`Остаток: ${remainingBalance}`);
+// console.log(`Расход: ${totalExpenses}`);
+
+
+
+
+// проверка на число:
+// 1 способ:
+
+// let selary = 0;
+// let input;
+ // do {
+//   input = +prompt('Введите вашу зарплату');
+ 
+//   if (isFinite(input)) {
+//     selary += input;
+//     console.log(selary);
+//   } else {
+//     alert('Было введено не число, попробуйте еще раз');
+//   }
+// } while (input !== 0);
+// alert(`Общая сумма чисел равна ${selary}`);
+
+// 2 способ:
+// let inputToParse = 'Invalid';
+// let number;
+ 
+// number = parseInt(inputToParse, 10);
+// if (isNaN(number)) {  number = 0;
+// }
+ 
+// number; // => 0
+
+</script>
+</body>
+</html>
