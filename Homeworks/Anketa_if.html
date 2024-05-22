@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa_if</title>
+</head>
+<body>
+    <script>
+
+
+// 3.	Задание из рабочей тетради (методичка)
+// Требуется спросить у пользователя:
+// •	фамилию, имя, отчество РАЗДЕЛЬНО (тремя операторами prompt)
+// •	возраст в годах (оператором prompt)
+// •	пол (оператором confirm, например, "ваш пол - мужской?")
+// и вывести оператором alert анкету пользователя по примеру:
+
+// ваше ФИО: Иванов Иван Иванович
+// ваш возраст в годах: 20
+// ваш возраст в днях: 7300
+// через 5 лет вам будет: 25
+// ваш пол: мужской
+// вы на пенсии: нет
+
+// Создать проект ANKETA.
+// На странице anketa_if.html реализовать задание
+// с использованием условного оператора (if), без условной операции (?:).
+// На странице anketa_ter.html реализовать задание
+// с использованием условной операции (?:), без условного оператора (if).
+// В обоих реализациях оператор alert должен использоваться ровно один раз.
+
+//ANKETA_IF
+
+let lastName = prompt("Введите вашу фамилию:");
+let firstName = prompt("Введите ваше имя:");
+let middleName = prompt("Введите ваше отчество:");
+let age = prompt("Введите ваш возраст в годах:");
+let gender = confirm("Ваш пол - мужской?");
+let fullName = lastName + " " + firstName + " " + middleName;
+let ageInDays = age * 365;
+let futureAge = parseInt(age) + 5;
+let pension = (gender && age >= 55) || (!gender && age >= 55) ? "да" : "нет";
+
+
+
+        if(gender)  
+  gender=="мужской";
+       else
+  gender=="женский";
+ 
+  alert("Ваше ФИО: " + fullName + "\nВаш возраст в годах: " + age + "\nВаш возраст в днях: " + ageInDays + "\nЧерез 5 лет вам будет: " + futureAge + "\nВаш пол: " + (gender ? "мужской" : "женский") + "\nВы на пенсии: " + pension);
+    </script>
+
+    </script>
+    
+</body>
+</html>
