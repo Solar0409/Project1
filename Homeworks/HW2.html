@@ -129,35 +129,77 @@
 // Девушка в поезде	2	да	нет
 
 
-
-function f(){
+// 
 
 let name = prompt("Какой жанр предпочитаете? 1 - Роман, 2 -Детектив, 3 -  Фентези");
 
-if (name != 1 && name !=2 && name !=3 ) return 'Вы ввели недопустимое значение. Пожалуйста, повоторите попытку';
+
+while (name >= 1 && name<=3  ) {
+   console.log("мы запомнили ваш выбор")
+   break;
+}
+while (name=isNaN){
+    alert('вы ввели неверное значение. Попробуйте еще раз');
+    break;
+}
 
 let userQuestion1 = confirm("Предпочитаете современную литературу?");
 let userQuestion2 = confirm("Хотели бы книгу русского автора?");
  
 if (name==1   && !userQuestion1 && userQuestion2 == true){
-    return `Предлагаем вам почитать - "Война и мир" `;
+
+alert (`Предлагаем вам почитать - "Война и мир" `);
+
 }else if (name==3 && userQuestion1 == true && userQuestion2 == true){
-    return `Предлагаем вам почитать - "Ночной дозор" `;
+
+    alert (`Предлагаем вам почитать - "Ночной дозор" `);
+
 } else  if (name==3 && userQuestion1 == true && userQuestion2 == false){
-    return `Предлагаем вам почитать - "Гарри Поттер" `;
+
+    alert (`Предлагаем вам почитать - "Гарри Поттер" `);
+
 }else if (name==2 && !userQuestion1 && userQuestion2 == false){
-    return `Предлагаем вам почитать - "Шерлок Холмс" `;
+
+    alert (`Предлагаем вам почитать - "Шерлок Холмс" `);
+
 }else if (name==2 && userQuestion1 == true && userQuestion2 == false){
-    return `Предлагаем вам почитать - "Девушка в поезде" `;
+
+    alert (`Предлагаем вам почитать - "Девушка в поезде" `);
+
 }else{
-    return "К сожалению, не смогли подобрать вам книгу";
-}
+    alert("К сожалению, не смогли подобрать вам книгу");
+
 }
 
-alert(f());
+// function f(){
+
+// let name = prompt("Какой жанр предпочитаете? 1 - Роман, 2 -Детектив, 3 -  Фентези");
+
+// if (name != 1 && name !=2 && name !=3 ) return 'Вы ввели недопустимое значение. Пожалуйста, повоторите попытку';
+
+// let userQuestion1 = confirm("Предпочитаете современную литературу?");
+// let userQuestion2 = confirm("Хотели бы книгу русского автора?");
+ 
+// if (name==1   && !userQuestion1 && userQuestion2 == true){
+//     return `Предлагаем вам почитать - "Война и мир" `;
+// }else if (name==3 && userQuestion1 == true && userQuestion2 == true){
+//     return `Предлагаем вам почитать - "Ночной дозор" `;
+// } else  if (name==3 && userQuestion1 == true && userQuestion2 == false){
+//     return `Предлагаем вам почитать - "Гарри Поттер" `;
+// }else if (name==2 && !userQuestion1 && userQuestion2 == false){
+//     return `Предлагаем вам почитать - "Шерлок Холмс" `;
+// }else if (name==2 && userQuestion1 == true && userQuestion2 == false){
+//     return `Предлагаем вам почитать - "Девушка в поезде" `;
+// }else{
+//     return "К сожалению, не смогли подобрать вам книгу";
+// }
+// }
+
+// alert(f());
 
 </script>
 </body>
 </html>
+
 
 
