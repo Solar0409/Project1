@@ -42,18 +42,18 @@ let ageInDays = age * 365;
 let futureAge = parseInt(age) + 5;
 let pension = (gender && age >= 55) || (!gender && age >= 55) ? "да" : "нет";
 
-
-
-        if(gender)  
-  gender=="мужской";
-       else
-  gender=="женский";
- 
-  alert("Ваше ФИО: " + fullName + "\nВаш возраст в годах: " + age + "\nВаш возраст в днях: " + ageInDays + "\nЧерез 5 лет вам будет: " + futureAge + "\nВаш пол: " + (gender ? "мужской" : "женский") + "\nВы на пенсии: " + pension);
+       
+  alert("Ваше ФИО: " + fullName +
+   "\nВаш возраст в годах: " + age
+    + "\nВаш возраст в днях: " + ageInDays + 
+    "\nЧерез 5 лет вам будет: " + futureAge + 
+    "\nВаш пол: " + (gender ? "мужской" : "женский") +
+     "\nВы на пенсии: " + pension);
     </script>
 
     </script>
     
 </body>
 </html>
+
 
