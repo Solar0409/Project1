@@ -36,19 +36,38 @@ let lastName = prompt("Введите вашу фамилию:");
 let firstName = prompt("Введите ваше имя:");
 let middleName = prompt("Введите ваше отчество:");
 let age = prompt("Введите ваш возраст в годах:");
-let gender = confirm("Ваш пол - мужской?");
+let isMale = confirm("Ваш пол - мужской?");
 let fullName = lastName + " " + firstName + " " + middleName;
 let ageInDays = age * 365;
 let futureAge = parseInt(age) + 5;
-let pension = (gender && age >= 55) || (!gender && age >= 55) ? "да" : "нет";
 
-       
+
+if (isMale) {
+gender = "мужской";
+} else {
+gender = "женский";
+}
+
+if (age >= 60) {
+isRetired = "да";
+} else {
+isRetired = "нет";
+}
+
+
   alert("Ваше ФИО: " + fullName +
    "\nВаш возраст в годах: " + age
     + "\nВаш возраст в днях: " + ageInDays + 
     "\nЧерез 5 лет вам будет: " + futureAge + 
-    "\nВаш пол: " + (gender ? "мужской" : "женский") +
-     "\nВы на пенсии: " + pension);
+    "\nВаш пол: " + gender +
+     "\nВы на пенсии: " + isRetired);
+
+
+
+
+
+
+// alert("ваше ФИО: ${fullName} ваш возраст в годах: ${age} ваш возраст в днях: ${ageInDays} через 5 лет вам будет: ${futureAge} ваш пол: ${gender} вы на пенсии: ${isRetired}");
     </script>
 
     </script>
