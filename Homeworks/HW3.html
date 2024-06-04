@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+//1. Десять раз попросите пользователя ввести данные массива (любые типы могут быть). 
+//Найдите сумму всех элементов-чисел.
+
+// const arr = [];
+
+// for (let i = 0; i < 10; i++) {
+// let userInput = prompt("Введите элемент массива:");
+// arr[arr.length] = userInput;
+// //arr.push(userInput);  //The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.
+// }
+
+// let sum = 0;
+
+
+// arr.forEach((element) => {  //The forEach() method of Array instances executes a provided function once for each array element.
+// if (!isNaN(element)) {
+// sum += parseFloat(element);
+// }
+// });
+
+// console.log("Сумма всех элементов-чисел:", sum);
+
+//2. Написать функцию со вспомогательными функциями, 
+//которая просит ввести пользователя размеры массива (пример 2x2, 2x3, 3x4, 5x5). 
+//И затем  сама заполняет его числами по порядку, пока не заполнится массив. (1, 2, 3, ...)
+
+
+// function createMatrix() {
+//     const rows = parseInt(prompt('Введите количество строк'));
+//     const cols = parseInt(prompt('Введите количество столбцов'));
+    
+//     const matrix = [];
+//     let count = 1;
+
+//     for (let i = 0; i < rows; i++) {
+//         matrix[i] = [];
+//         for (let j = 0; j < cols; j++) {
+//             matrix[i][j] = count;
+//             count++;
+//         }
+//     }
+
+//     return matrix;
+// }
+
+// function displayMatrix(matrix) {
+//     for (let i = 0; i < matrix.length; i++) {
+//         console.log(matrix[i].join(' ')); //The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+//     }
+// }
+
+// const matrix = createMatrix();
+// displayMatrix(matrix);
+
+
+// Задание на 7 баллов
+// Написать функцию, со вспомогательными функциями, которая заполняет статистику пользователя о прохождении курса.  Доделать, то что выделено красным. 
+
+// - просит ввести имя пользователя
+// - она просит ввести количество занятий
+// - потом для каждого занятия просит ввести оценки
+// Потом по кнопкам выводит
+// -   средний балл
+// - просто выводит данные Пользователя с его оценками
+// - говорит, сколько ему не хватает до 7.5 либо пишет что баллов достаточно для прохождения на следующий курс
+// - 
+
+
+// user = {
+// name: 'Иванов Иван',
+// lessons: {
+// 	1: 6,
+// 	2: 9,
+// 	3: 10,
+// 4: 7
+// }
+// }
+
+// function getName() {
+//       let name;
+//       do {
+//         name = prompt("Введите имя пользователя");
+//         if (name == null || name == "") {
+//                 alert("Вы ничего не ввели!");
+//         }
+//       } while (name == null || name == '');
+//       return name;
+//     }
+
+//     function getData(lesson) {
+//       let size;
+//       //проверяем число на валидность
+//       do {
+//         // проверяем тип вводимых значений: оценки, либо занятия.
+//           size = lesson ? getMark(lesson) : getLessons();
+//           if (size == null || size == "") {
+//               alert("Вы ничего не ввели!");
+//           } else if (isNaN(size)) {
+//               alert("Вы ввели не число!");
+//           } else if (parseInt(size) <= 0) {
+//               alert("Нужно ввести положительное число!");
+//           } else if (parseInt(size) != parseFloat(size)) {
+//               alert("Нужно ввести целое число!");
+//           } else {
+//               size = parseInt(size);
+//           }
+//       } while (size !== parseInt(size));
+//       return size;
+//     }
+
+//     function getLessons() {
+//       return size = prompt("Введите количество занятий");
+//     }
+
+//     function getMark(lesson) {
+//       return size = prompt("Введите оценку за занятие " + lesson);
+//     }
+
+//     function createUserObject(name, lessons) {
+//       let lessonObject = {};
+//       for (let i = 1; i <= lessons; i++) {
+//         // вызываем getData c параметром, в котором прописан конкретный lesson
+//         // таким образом получаем оценку за конкретное занятие и кладем в обьект
+//         lessonObject[i] = getData(i);
+//       }
+//       let user = {
+//         name: name,
+//         lessons: lessonObject
+//       }
+//       return user;
+//     }
+
+//     function result() {
+//       let name = getName();
+//       let lessons = getData();  // вызываем getData без параметра - это будет значить, что получаем кол-во занятий
+//       let obj = createUserObject(name, lessons);
+//       console.log(obj)
+//     }
+
+
+//     function calculateAverageGrade() {
+//     let total = 0;
+//     for (let lesson in user.lessons) {
+//         total += user.lessons[lesson];
+//     }
+//     return total / Object.keys(user.lessons).length;
+// }
+
+// function displayUserInfo() {
+//     console.log('Пользователь:', user);
+// }
+
+// function checkPassingGrade() {
+//     let averageGrade = calculateAverageGrade();
+//     if (averageGrade < 7.5) {
+//         console.log(`Вам не хватает ${7.5 - averageGrade} баллов для прохождения`);
+//     } else {
+//         console.log('Баллов достаточно для прохождения на следующий курс');
+//     }
+// }
+
+// askName();
+// askNumberOfLessons();
+
+// return {
+//     calculateAverageGrade,
+//     displayUserInfo,
+//     checkPassingGrade
+// };
+
+
+
+// let statistics = fillStatistics();
+// console.log('Средний балл:', calculateAverageGrade());
+// // statistics.displayUserInfo();
+// // statistics.checkPassingGrade();
+//   <button onclick="result()"> Создаем обьект с оценками</button>
+//   <button onclick=""> Подсчитываем средний балл</button>
+//   <button onclick=""> Прохожу на  проф курс? </button>
+
+
+// Задание на 8 баллов
+
+// Создать массив обьектов товаров на рынке, каждый из которых имеет название, цену и количество.
+// name
+// price
+// count (kg)
+// яблоко
+// 3.5
+// 10
+// апельсин
+// 6
+// 14
+// банан
+// 5.1
+// 2
+// мандарин
+// 5.9
+// 9
+// груша
+// 1.3
+// 5
+
+
+// Написать функции (желательно вместе со вспомогательными функциями и с проверками), которые позволяют делать следующие действия
+// Показывает все названия товаров с ценой
+//   	Яблоко: 3.5 за кг
+// Апельсин: 6 за кг
+// ...
+// Пользователь передает название товара, а в ответ получает его цену в виде сообщения «Стоимость товара ‘апельсин’ - 6
+// Спрашивает сколько денег у пользователя и отвечает сколько кг одного товара он может купить за эту сумму. (на 9-10 баллов)
+
+// Пример: Ввод -> 15
+//       Вывод: -> 4 кг яблоко или 2 кг апельсин или 2 кг банан или 2 кг мандарин или 5 кг груша
+
+
+
+
+
+// Создание массива объектов товаров
+// const marketProducts = [
+//   { name: 'Яблоко', price: 3.5, count: 10 },
+//   { name: 'Апельсин', price: 6, count: 14 },
+//   { name: 'Банан', price: 5.1, count: 2 },
+//   { name: 'Мандарин', price: 5.9, count: 9 },
+//   { name: 'Груша', price: 1.3, count: 5 }
+// ];
+
+// // Функция для показа всех названий товаров с ценой
+// function showProducts() {
+//   marketProducts.forEach(product => {
+//     console.log(`${product.name}: ${product.price} за кг`);
+//   });
+// }
+
+// // Функция для вывода цены товара по его названию
+// function findPriceByName(productName) {
+//   const product = marketProducts.find(product => product.name === productName);
+//   if (product) {
+//     console.log(`Стоимость товара '${product.name}' - ${product.price}`);
+//   } else {
+//     console.log(`Товар с названием '${productName}' не найден`);
+//   }
+// }
+
+// // Функция для расчета количества кг товара, которое пользователь может купить за введенное количество денег
+// function calculateQuantityByMoney(moneyAmount) {
+//   let possibleQuantities = [];
+//   marketProducts.forEach(product => {
+//     if (moneyAmount >= product.price) {
+//       const quantity = Math.floor(moneyAmount / product.price);
+//       if (quantity <= product.count) {
+//         possibleQuantities.push(`${quantity} кг ${product.name}`);
+//       }
+//     }
+//   });
+  
+//   if (possibleQuantities.length > 0) {
+//     console.log(`Для суммы ${moneyAmount} можно купить: ${possibleQuantities.join(' или ')}`);
+//   } else {
+//     console.log('На указанную сумму нельзя купить ни одного товара');
+//   }
+// }
+
+// // Пример использования функций
+// console.log("Все товары и их цены:");
+// showProducts();
+
+// console.log("\nЦена товара по названию:");
+// findPriceByName('Апельсин');
+
+// console.log("\nРасчет количества кг товара по введенной сумме:");
+// calculateQuantityByMoney(15);
+
+
+
+// Задание на 9-10 баллов
+
+// Попросить пользователя  ввести размеры матрицы NxN и значения ячеек (целые числа, сделать проверку)
+
+// Ввод 
+// Введите количество строк\столбцов (N)
+// Введите значение ячейки 1-1
+// Введите значение ячейки 1-2
+
+
+// Вывод 
+// Полностью выведенная матрица
+// Сумма элементов на главной диагонали (10 баллов)
+// Сумма элементов на побочной диагонали (10 баллов)
+// Сумма элементов в строке №1
+// Сумма элементов в строке №2
+
+
+function getNaturalNumber(message, value, errorMessage) {
+            let input /*string*/, number /*integer*/;
+            while (true) {
+                input = prompt(message, value);
+                if ((number = +input) !== parseInt(input) || number <= 0)
+                    alert(errorMessage);
+                else break;
+            }
+            return number;
+        } 
+        function randomMatrix(rows, columns) {
+            let array = new Array(rows);
+            for (let i = 0; i < rows; i++) {
+                array[i] = new Array(columns);
+                for (let j = 0; j < columns; j++)
+                    array[i][j] = Math.floor(Math.random() * 10); // Случайное число от 0 до 9
+            }
+            return array;
+        }
+ 
+        function createTable(wrapper, caption, headArray, bodyArray, footArray) {
+            let s = `<table>`;
+            if (typeof caption === "string" && caption.length) {
+                s += `<caption>${caption}</caption>`;
+            }
+            if (Array.isArray(headArray) && headArray.length) {
+                s += `<thead><tr>`;
+ 
+                for (let name of headArray)
+                    s += `<th>${name}</th>`;
+ 
+                s += `</tr></thead>`;
+            }
+            s += `<tbody>`;
+            for (let row of bodyArray) {
+                s += `<tr>`;
+                for (let e of Object.values(row))
+                    s += `<td>${e}</td>`;
+ 
+                s += `</tr>`;
+            }
+            s += `</tbody>`;
+            if (Array.isArray(footArray) && footArray.length) {
+                s += `<tfoot><tr>`;
+ 
+                for (let summary of footArray)
+                    s += `<th>${summary}</th>`;
+ 
+                s += `</tr></tfoot>`;
+            }
+            s += `</table>`;
+            wrapper.insertAdjacentHTML("beforeend", s);
+        }
+ 
+        let rows, // Количество строк
+            columns, // Количество столбцов
+            matrix, // Основной массив таблицы
+            nums = []; // Массив итогов таблицы
+ 
+        rows = getNaturalNumber("Введите желаемое количество строк:", 2, "Введите положительное целое число!");
+ 
+        columns = getNaturalNumber("Введите желаемое количество столбцов:", 2, "Введите положительное целое число!");
+ 
+        matrix = randomMatrix(rows, columns);
+ 
+        // Расчет итогов
+        for (let i = 0; i < columns; i++) {
+            nums[i] = 0;
+            for (let j = 0; j < rows; j++) {
+                nums[i] += matrix[j][i];
+            }
+            nums[i] = (nums[i] / rows).toFixed(2);
+        }
+        // Показать таблицу с итогами на экране
+        createTable(document.body, "Таблица", undefined, matrix, nums);
+
+    </script>
+    
+</body>
+</html>
